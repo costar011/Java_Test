@@ -39,6 +39,25 @@ abstract class Product {
 }
 
 // Electronics 클래스 작성란
+public class Electronics extends Product {
+    private String energyGrade;
+
+    public Electronics(String name, int price, String energyGrade) {
+        super(name, price);
+        this.energyGrade = energyGrade;
+    }
+
+    public String getEnergyGrade() {
+        return energyGrade;
+    }
+
+    @Override
+    public String toString() {
+        return "제품 번호: " + getProductNumber();
+    }
+}
+
+
 
 
 // Foods 클래스 작성란
